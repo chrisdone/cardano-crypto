@@ -17,5 +17,5 @@ main =
          (flip CC.generate (mempty :: ScrubbedBytes))
          s
        | (n, !s) <-
-           map (\n -> (n, S.replicate n 0)) [0, 1, 10, 100, 1000, 10000]
+           map (\n -> (n, S.replicate n 0)) [32, 32*10, 32*100, 32*1000, 32*10000]
        ])
